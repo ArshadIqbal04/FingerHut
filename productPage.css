@@ -1,0 +1,59 @@
+.container-main-container{
+    display: flex;
+}
+
+.sorting-region{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-left: 5px;
+    border: 1px solid grey;
+}
+
+.sorting-region h3{
+    color: #003399;
+    font-size: 17.36px;
+}
+
+.sorting-region li{
+    list-style: none;
+    color: #11588F;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.product-region{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.advCard{
+    display: flex;
+    margin-left: 40px;
+    background-color: #f6f6f6;
+    width: 700px;
+}
+
+.advCard img{
+    width: 205px;
+    height: 164.44px;
+}
+
+.advCard div+div{
+    margin-left: 40px;
+}
+
+.sideCard{
+    margin: 8px;
+}
+
+.sideCard img{
+    width: 261px;
+    height: 208px;
+}
+
+.sideh1{
+    font-size: 18px;
+    font-weight: 700;
+}
