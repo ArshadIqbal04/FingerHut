@@ -1,5 +1,6 @@
 .container-main-container{
     display: flex;
+    justify-content: center;
 }
 
 .sorting-region{
@@ -23,9 +24,37 @@
     font-size: 15px;
 }
 
-.product-region{
+#productRegion-Card{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+    margin-left: 12px;
+}
+
+#productRegion-Card div{
+    width: 205.05px;
+}
+
+#productRegion-Card img{
+    width: 205.05px;
+    height: 205.05px;
+}
+
+#productRegion-Card h4{
+    margin-top: 4px;
+    height: 36px;
+}
+
+#productRegion-Card button{
+    padding: 8px 20px;
+    background-color: #3187c9;
+    color: white;
+    border-radius: 8px;
+}
+
+#productRegion-Card p{
+    margin-bottom: 6px;
+    margin-top: 6px;
 }
 
 .advCard{
@@ -44,6 +73,12 @@
     margin-left: 40px;
 }
 
+.sideOffers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sideCard{
     margin: 8px;
 }
@@ -53,7 +88,13 @@
     height: 208px;
 }
 
-.sideh1{
+.sideCard div+p{
     font-size: 18px;
     font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 6px;
+}
+
+.sideCard p+p{
+    margin-top: 4px;
 }
