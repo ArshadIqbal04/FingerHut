@@ -1,0 +1,98 @@
+#mainBox {
+    background-color: rgb(246, 246, 246);
+}
+
+#topBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#tr {
+    display: flex;
+    margin-left: 50px;
+}
+
+#bottomBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bottomBox>div>button {
+    background-color: rgb(1, 51, 153);
+    color: white;
+    font-size: 1.042em;
+    border-radius: 20px;
+    padding: 11px 15px;
+    display: block;
+    white-space: nowrap;
+    width: 250px;
+    margin-left: 40px;
+    height: 55px;
+
+}
+
+#tl {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: #003399;
+    padding: 10px 10px 1px 10px;
+    margin-right: 20px;
+    line-height: 1.428571429;
+}
+
+#search {
+    content: "\e01b";
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 1px solid #cccccc;
+    border-right: 0;
+    box-shadow: inset 1px 1px 5px #e5e5e5;
+    flex-grow: 1;
+    height: 53px;
+
+    box-sizing: border-box;
+    padding: 6px 12px;
+    padding-right: 0px;
+    width: 1000px;
+}
+#icon-magnify:before {
+    content: "\e01b";
+}
+#searchBtn {
+    min-width: auto;
+    margin-bottom: initial;
+    border: initial;
+    border-radius: 0 50px 50px 0;
+    color: #fff;
+    background-color: #003399;
+    padding: 6px 20px;
+    font-size: 1.042em;
+    height: 53px;
+    /* width:10px; */
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+}
+/* .................................BOX2.......................................... */
+.title1 {
+    font-size: 40px;
+    max-width: 245px;
+    max-width: 409px;
+    font-weight: 900;
+    color: #003399;
+    line-height: 1;
+    box-sizing: border-box;
+}
+.title2 {
+    font-size: 23px;
+    max-width: 215px;
+    font-weight: 400;
+    color: #003399;
+}
