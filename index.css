@@ -1,5 +1,8 @@
 #mainBox {
     background-color: rgb(246, 246, 246);
+    margin-bottom: 40px;
+    /* margin-right: 70px;
+        margin-left: 70px; */
 }
 
 #topBox {
@@ -96,3 +99,39 @@
     font-weight: 400;
     color: #003399;
 }
+/* ...........................box3................................................... */
+/* .centerBolckHidden {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+.container {
+    background-color: rgb(246,246,246);
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* .centerBolckHidden>img {
+    vertical-align: middle;
+    width:100%
+}
+.workOrderStyle {
+    list-style: none;
+}
+.workText {
+   
+    width: 194px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+#logo >div {
+border: #003399;
+} */
