@@ -1,8 +1,12 @@
+body {
+    margin:0;
+    padding:0;
+}
 #mainBox {
-    background-color: rgb(246, 246, 246);
+    
     margin-bottom: 40px;
-    /* margin-right: 70px;
-        margin-left: 70px; */
+    margin-right: 70px;
+    margin-left: 70px; 
 }
 
 #topBox {
@@ -35,6 +39,42 @@
     height: 55px;
 
 }
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  .dropdown-content a:hover {background-color: rgb(124, 153, 213);}
+
+  .dropdown:hover .dropdown-content {display: block;
+}
+  
+    .dropdown-content {
+    margin-left: 55px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
 
 #tl {
     font-weight: 700;
@@ -48,7 +88,7 @@
 }
 
 #search {
-    content: "\e01b";
+
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     border: 1px solid #cccccc;
@@ -56,13 +96,13 @@
     box-shadow: inset 1px 1px 5px #e5e5e5;
     flex-grow: 1;
     height: 53px;
-
     box-sizing: border-box;
     padding: 6px 12px;
     padding-right: 0px;
-    width: 1000px;
+    width: 850px;
+    
 }
-#icon-magnify:before {
+.iconmagnify:before {
     content: "\e01b";
 }
 #searchBtn {
@@ -83,7 +123,6 @@
     cursor: pointer;
     background-image: none;
 }
-/* .................................BOX2.......................................... */
 .title1 {
     font-size: 40px;
     max-width: 245px;
@@ -99,12 +138,6 @@
     font-weight: 400;
     color: #003399;
 }
-/* ...........................box3................................................... */
-/* .centerBolckHidden {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
 .container {
     background-color: rgb(246,246,246);
     margin-right: auto;
@@ -113,25 +146,18 @@
     padding-right: 10px;
 }
 
-
-/* .centerBolckHidden>img {
-    vertical-align: middle;
-    width:100%
+/* //////////////////////////////// */
+@media (max-width: 767px){
+.mainBox {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
 }
-.workOrderStyle {
-    list-style: none;
 }
-.workText {
-   
-    width: 194px;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-size: 36px;
-    line-height: 1.2em;
-    font-weight: 700;
+@media (min-width: 768px){
+.mainBox {
+    background-color:	white;
+    border-bottom: 1px solid ash;
 }
-#logo >div {
-border: #003399;
-} */
+}
+/* ////////////////////////////////// */
