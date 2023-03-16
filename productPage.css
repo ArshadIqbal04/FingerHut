@@ -3,25 +3,30 @@
     justify-content: center;
 }
 
-.sorting-region{
-    width: 200px;
+.sorting-region>div{
+    width: 250px;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     padding-left: 5px;
+    /* margin-bottom: 20px; */
     border: 1px solid grey;
 }
 
 .sorting-region h3{
     color: #003399;
-    font-size: 17.36px;
+    font-size: 20.36px;
 }
 
 .sorting-region li{
     list-style: none;
     color: #11588F;
     padding: 5px;
-    font-size: 15px;
+    font-size: 17px;
+}
+
+.categories, .price_selections, .brandSort, .genderSort{
+    margin: 10px 0;
 }
 
 #productRegion-Card{
@@ -40,21 +45,52 @@
     height: 205.05px;
 }
 
-#productRegion-Card h4{
+#productRegion-Card div > div{
     margin-top: 4px;
+    /* margin-bottom: 8px; */
     height: 36px;
+    color:  #11588F;
+    margin-bottom: 16px;
+    font-size: 17px;
 }
 
 #productRegion-Card button{
+    display: flex;
+    justify-content: center;
     padding: 8px 20px;
     background-color: #3187c9;
     color: white;
     border-radius: 8px;
+    border: none;
+    font-weight: bold;
 }
 
-#productRegion-Card p{
-    margin-bottom: 6px;
-    margin-top: 6px;
+.sortClass{
+    margin:10px 20px; 
+}
+
+.sortClass label{
+    font-size: 22px;
+    margin-right: 12px;
+}
+
+.sortClass select{
+    font-size: 16px;
+    color: grey;
+    border: 1px solid grey;
+    padding: 5px 24px 5px 5px;
+}
+
+#productRegion-Card div+p{
+    margin: 6px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#productRegion-Card p+p{
+    margin: 8px;
+    font-size: 15px;
+    margin-left: 0;
 }
 
 .advCard{
@@ -70,13 +106,27 @@
 }
 
 .advCard div+div{
+    display: flex;
+    flex-direction: column;
     margin-left: 40px;
+    justify-content: center;
 }
 
-.sideOffers{
+.advCard p{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.sideOffers>div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid grey;
+    margin-left: 20px;
+}
+
+.sideOffers h2{
+    margin-bottom: 4px;
 }
 
 .sideCard{
@@ -86,6 +136,18 @@
 .sideCard img{
     width: 261px;
     height: 208px;
+}
+
+.sideCard div+div{
+    width: 150px;    
+}
+
+.sideCard h4{
+    position: absolute;
+    color: white;
+    background-color: red;
+    padding: 10px 8px; 
+    margin-top: -45px;
 }
 
 .sideCard div+p{
