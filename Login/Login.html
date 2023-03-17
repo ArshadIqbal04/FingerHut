@@ -5,71 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <style>
-        .formpage {
-            /* height: 400px; */
-            width: 500px;
-            display: block;
-            padding: 20px;
-            margin: auto;
-        }
-        #box{
-            /* border: 2px solid red; */
-    
-            text-align: left;
-            padding: 20px;
-            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, 
-            rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-
-        }
-
-        input {
-            padding:15px;
-            width: 90%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-            border: 1px solid grey;
-        }
-        label{
-            font-size: 20px;
-            color: rgb(27, 26, 26);
-        }
-        button{
-           padding: 10px;
-           margin-top: 30px;
-           width: 98%;
-           border-radius: 15px;
-           background-color: #003399 ;
-           color: white;
-           font-weight: bold;
-           font-size: 15px;
-        }
-        span{
-                    font-size: 25px;
-                    color: rgb(104, 102, 102);
-                }
-                h3{
-                    font-size: 25px;
-                }
-                p{
-                    /* color: grey; */
-                    font-size: 20px;
-                }
-                .checkbox{
-                    display: flex;
-                    
-                    /* border: 1px solid teal; */
-                    /* padding: 10px; */
-                    /* justify-content: space-between; */
-                }
-                .checkbox > p{
-                    margin-right: 100px;
-                    margin-top: 15px;
-                    
-                    
-                } 
-    </style>
+    <link rel="stylesheet" href="Login.css">
 </head>
 <body>
     <h1 style="text-align: center;">Log In</h1>
@@ -77,18 +13,21 @@
         <h3>Sign In<span> to Fingerhut</span></h3>
 <form id="box">
     <label for="">Email Address*</label><br>
-            <input type="text"><br>
+            <input type="text" id="mail" placeholder="Enter Your Mail"><br>
             <div class="checkbox">
                 <input type="checkbox" style="margin-top: 10%; margin-top: 10px; height:30px; width: 20px;"><p>Remeber on this device.</p>
             </div>
     <label for="">Password*</label><br>
-            <input type="text"><br>
+            <input type="text" id="password" placeholder="Password"><br>
             <p style="color:#003399">Forgot Your Password?</p>
-            <button>Sign In</button>
+            <button style="border: none;" onClick="Login(event)">Sign In</button>
             <p style="text-align: center; color: rgb(116, 114, 114);">New Customer?</p>
             <button style="background-color: white; color: #003399; border-color: blue;">Register on Fingerhut</button>
+            <p style="text-align: center; font-size: 13px;">Register now to see your available credit,<br>
+                make payments, track orders and more.</p>
            
         </form>
         </div>
 </body>
 </html>
+<script src="Login.js"></script>

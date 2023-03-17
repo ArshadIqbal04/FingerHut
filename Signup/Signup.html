@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
-    <link rel="stylesheet" href="Signup.css">
-    
-    
+    <link rel="stylesheet" href="Signup.css">    
 </head>
 <body>
     <h1 style="text-align: center;">Sign Up </h1>
@@ -17,32 +15,29 @@
         <form id="box">
             <label for="">Name*</label><br>
             <input type="text" id="name" placeholder="Enter Your Name"><br>
-        <label for="">Email Address*</label><br>
-            <input type="text" id="mail"  placeholder="Enter Your Email Address"><br>
-           
+            <label for="">Email Address*</label><br>
+            <input type="text" id="mail"  placeholder="Enter Your Email Address"><br>           
             <label for="">Password*</label><br>
-            <input type="text" id="pass"  placeholder="Enter Your Password"><br>
+            <input type="password" id="pass"  placeholder="Enter Your Password"><br>
             <!-- <p>Your password must include the following: <br>
                 At least 8 characters <br>
                 1 uppercase letter <br>
                 1 lowercase letter <br>
                 1 number or special character (ex. !@#$%^)</p> -->
             <label for="">Confirm Password*</label><br>
-            <input type="text" id="confirmpass"  placeholder="Enter Your Confirm Password"><br>
+            <input type="password" id="confirmpass"  placeholder="Enter Your Confirm Password"><br>
             <label for="">Customer Number</label><br>
-            <input type="text"  placeholder="Enter Your Contact Number"><br>
+            <input type="text" id="customerNumber" placeholder="Enter Your Contact Number"><br>
             <div class="checkbox">
                 <input type="checkbox" style="margin-left: 0%; margin-top: 10px; height:40px; width: 20px;">
                 <p>Yes! Email me special offers and promotions. <br> <span style="color: blue"><a href="Learn More">Learn More</a></span></p>
-            </div>
-           
+            </div>           
             <button onclick="signup(event)">Register</button>
-
             <p style="text-align: center;">Already Registered? <span style="color: blue;"><a href="../Login/Login.html">Sign In</a></span></p>
         </form>
     </div>
     <p style="text-align: center; font-size: 18px;">By signing in you agree to the <a href="">Terms of Use,<br>
         WebBank/Fingerhut Credit Account Terms and <br> Conditions and Arbitration Clause,</a> and <a href="">Privacy Policy.</a></p>
 </body>
-</html>
 <script src="Signup.js"></script>
+</html>
