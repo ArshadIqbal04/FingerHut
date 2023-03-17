@@ -18,7 +18,7 @@
                 <div>
                     <div class="categories">
                         <h3>Categories</h3>
-                        <li id="clothing">Clothing </li>
+                        <li id="cloth">Clothing </li>
                         <li id="electronics">Electronics</li>
                         <li id="shoe">Shoe</li>
                         <li>Furniture</li>
@@ -46,19 +46,18 @@
     
                     <div class="brandSort">
                         <h3>Brand</h3>
-                        <li>Reebook</li>
-                        <li>New Balance</li>
-                        <li>Puma</li>
-                        <li>Appple</li>
-                        <li>Samsung</li>
+                        <li id="reebook">Reebook</li>
+                        <li id="new-balance">New Balance</li>
+                        <li id="puma">Puma</li>
+                        <li id="apple">Appple</li>
+                        <li id="samsung">Samsung</li>
                         <hr>
                     </div>
     
                     <div class="genderSort">
                         <h3>Gender</h3>
-                        <li>Unisex</li>
-                        <li>Womens</li>
-                        <li>Mens</li>
+                        <li id="female">Womens</li>
+                        <li id="male">Mens</li>
                         <li>Boys</li>
                         <li>Girls</li>
                     </div>
@@ -77,8 +76,8 @@
                 </div>
                 <div class="sortClass">
                     <label for="">Sort By</label>
-                    <select name="Sort By" id="sorting">
-                        <option value="">Relevance</option>
+                    <select onchange="sortingFun" id="sortingbyPrice">
+                        <option value="Relevance">Relevance</option>
                         <option value="Low to High">Low to High</option>
                         <option value="High to Low">High to Low</option>
                         <option value="Rating">Rating high to low</option>
