@@ -1,0 +1,66 @@
+
+.formpage {
+    /* height: 400px; */
+    width: 500px;
+    display: block;
+    padding: 30px;
+    margin: auto;
+    
+    /* border: 2px solid teal; */
+}
+#box{
+    /* border: 2px solid red; */
+
+    text-align: left;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+}
+input {
+    padding: 15px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+label{
+    font-size: 20px;
+}
+button{
+   margin-left: 0%;
+   padding: 10px;
+   /* margin-top: 0px; */
+   width: 98%;
+   border-radius: 15px;
+   background-color: #003399 ;
+   color: white;
+   font-weight: bold;
+   font-size: 15px;
+   border: none;
+        }
+        span{
+            font-size: 20px;
+            color: rgb(158, 152, 152);
+        }
+        h3{
+            font-size: 25px;
+
+        }
+        p{
+            color: grey;
+            font-size: 20px;
+        }
+        .checkbox{
+            display: flex;
+            
+            /* border: 1px solid teal; */
+            /* padding: 10px; */
+            /* justify-content: space-between; */
+        }
+        
+        .checkbox > p{
+            margin-left: 5px;
+        }   
+        

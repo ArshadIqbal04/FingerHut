@@ -5,105 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
-    <style>
-        .formpage {
-            /* height: 400px; */
-            width: 500px;
-            display: block;
-            padding: 30px;
-            margin: auto;
-            
-            /* border: 2px solid teal; */
-        }
-        #box{
-            /* border: 2px solid red; */
+    <link rel="stylesheet" href="Signup.css">
     
-            text-align: left;
-            padding: 20px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-             rgba(0, 0, 0, 0.12) 0px -12px 30px,
-              rgba(0, 0, 0, 0.12) 0px 4px 6px, 
-             rgba(0, 0, 0, 0.17) 0px 12px 13px,
-             rgba(0, 0, 0, 0.09) 0px -3px 5px;;
-
-        }
-        input {
-            padding: 15px;
-            width: 90%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-            border: 1px solid grey;
-        }
-        label{
-            font-size: 20px;
-        }
-        button{
-           margin-left: 0%;
-           padding: 10px;
-           /* margin-top: 0px; */
-           width: 98%;
-           border-radius: 15px;
-           background-color: #003399 ;
-           color: white;
-           font-weight: bold;
-           font-size: 15px;
-                }
-                span{
-                    font-size: 20px;
-                    color: rgb(158, 152, 152);
-                }
-                h3{
-                    font-size: 20px;
-                }
-                p{
-                    color: grey;
-                    font-size: 20px;
-                }
-                .checkbox{
-                    display: flex;
-                    
-                    /* border: 1px solid teal; */
-                    /* padding: 10px; */
-                    /* justify-content: space-between; */
-                }
-                
-                .checkbox > p{
-                    margin-left: 5px;
-                }   
-                
-
-    </style>
+    
 </head>
 <body>
-    <h1 style="text-align: center;">Signup</h1>
+    <h1 style="text-align: center;">Sign Up </h1>
     <div class="formpage">
         <h3>Register <span>on Fingerhut</span></h3>
         <p>Register now to see your available credit, make payment,track orders and more</p>
         <form id="box">
+            <label for="">Name*</label><br>
+            <input type="text" id="name" placeholder="Enter Your Name"><br>
         <label for="">Email Address*</label><br>
-            <input type="text"><br>
-            <label for="">Confirm Email Address*</label><br>
-            <input type="text"><br>
+            <input type="text" id="mail"  placeholder="Enter Your Email Address"><br>
+           
             <label for="">Password*</label><br>
-            <input type="text"><br>
-            <p>Your password must include the following: <br>
+            <input type="text" id="pass"  placeholder="Enter Your Password"><br>
+            <!-- <p>Your password must include the following: <br>
                 At least 8 characters <br>
                 1 uppercase letter <br>
                 1 lowercase letter <br>
-                1 number or special character (ex. !@#$%^)</p>
+                1 number or special character (ex. !@#$%^)</p> -->
             <label for="">Confirm Password*</label><br>
-            <input type="text"><br>
+            <input type="text" id="confirmpass"  placeholder="Enter Your Confirm Password"><br>
             <label for="">Customer Number</label><br>
-            <input type="text"><br>
+            <input type="text"  placeholder="Enter Your Contact Number"><br>
             <div class="checkbox">
-                <input type="checkbox" style="margin-left: 0%; margin-top: 10px; height:40px; width: 20px;"><p>Yes! Email me special and promotions.</p>
+                <input type="checkbox" style="margin-left: 0%; margin-top: 10px; height:40px; width: 20px;">
+                <p>Yes! Email me special offers and promotions. <br> <span style="color: blue"><a href="Learn More">Learn More</a></span></p>
             </div>
            
-            <button>Register</button>
+            <button onclick="signup(event)">Register</button>
 
-            <p style="text-align: center;">Already Registered? <span style="color: blue;">Sign In</span></p>
+            <p style="text-align: center;">Already Registered? <span style="color: blue;"><a href="../Login/Login.html">Sign In</a></span></p>
         </form>
     </div>
+    <p style="text-align: center; font-size: 18px;">By signing in you agree to the <a href="">Terms of Use,<br>
+        WebBank/Fingerhut Credit Account Terms and <br> Conditions and Arbitration Clause,</a> and <a href="">Privacy Policy.</a></p>
 </body>
 </html>
+<script src="Signup.js"></script>
