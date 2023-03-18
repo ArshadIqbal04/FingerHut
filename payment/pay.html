@@ -1,67 +1,10 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="payment.css">
-    <style>
-      .main{
-        padding: auto;
-        margin: auto;
-        width: 270px;
-        margin-top: 250px;
-              
-    }
-
-      button{
-        display: flex;
-        margin: auto;
-        width: 15%;
-        border: black;
-        text-align: center;
-        justify-content: center;
-        border-radius: 5px;
-        
-      }
-      body{
-        background-color:rgb(90, 229, 153);
-      }
-    </style>
-</head>
-<body>
-    <h1>Payement Gateway</h1>
-    <div class="main">
-    <table>
-        <tr>
-            <td id="num"><label for="number">Card No</label></td>
-        
-            <td><input type="Number" placeholder="123456789"></td>
-        </tr>
-        <tr>
-            <td id="cv"><label for="number">CVV</label></td>
-            
-            <td><input type="Number" placeholder="123"></td>
-        </tr>
-      <tr>
-            <td><label for="date">Expiry Date</label></td>
-            <td><input type="date" placeholder="01/01/2022"></td>
-        </tr>
-        <tr>
-            <td><label for="text">Name</label></td>
-            <td><input type="text" placeholder="name"></td>
-        </tr>
-        
-    </table>
-    </div> -->
     <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Card Details</title>
         <style>
             #btn{
                 /* background-color: blue;
@@ -78,9 +21,10 @@
 
             }
             .container{
+                /* box-sizing: border-box; */
                 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	background: white;
-	max-width: 500px;
+	background: rgb(241, 239, 239);
+	/* max-width: 500px; */
     margin-left: 10%;
     margin-right: 10%;
     /* text-align: center; */
@@ -88,9 +32,16 @@
 	/* min-height: 500vh; */
 	display: flex;
 	justify-content:flex-start;
-	align-items: flex-start;
-	padding: 0.5rem 1.5rem;
+	/* align-items: flex-start; */
+	/* padding: 0.5rem 1.5rem; */
 	padding-left: 500px;
+    
+}
+form{
+    background-color:skyblue;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 4px;
 }
             #footer>span{
 	display: flex;
@@ -116,13 +67,13 @@
     
                     Credit card number
                     <br>
-                <input type="text" name="" placeholder="Enter card number">
+                <input id="cdno" type="text" name="" placeholder="Enter card number">
                 <br>
                 <br>
                     
                     Exp month
                     <br>
-                    <input type="text" name="" placeholder="Enter Month">
+                    <input id="month" type="text" name="" placeholder="Enter Month">
                     <br>
                     <br>
                     <div id="zip">
@@ -138,7 +89,7 @@
                             </select>
                             <br><br>
                         </label>
-                            <label>
+                            <label id="cvv">
                             CVV
                             <br>
                             <input type="number" name="" placeholder="CVV">
@@ -151,7 +102,7 @@
             </div>
         </div>
         <br>
-        <a href="otp.html"><button id="btn"><h1>Enter</h1></button></a>
+        <a href="popup.html"><button id="btn"><h1>Enter</h1></button></a>
     </body>
     </html>
 
@@ -188,3 +139,25 @@
         </div>
 </body>
 </html>
+<script>
+        document.querySelector("a").addEventListener("click",work);
+
+function work(){
+     var cdno=document.getElementById("cdno").value;
+     var month=document.getElementById("month").value;
+     var year=document.getElementById("year").value;
+     var cvv=document.getElementById("cvv").value;
+
+     if(cdno==1111222233334444&&month===08&&year===2023&&cvv===123){
+        alert("Successfull")
+        // function openPopup(){
+        // popup.classList.add("open-popup");
+    // }
+     }else if(cdno===""||month===""||year===""||cvv===""){
+        alert("enter otp")
+     }else{
+        alert("Enter valid otp")
+     }
+}
+
+</script>
