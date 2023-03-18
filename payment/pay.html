@@ -1,0 +1,190 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+    <style>
+      .main{
+        padding: auto;
+        margin: auto;
+        width: 270px;
+        margin-top: 250px;
+              
+    }
+
+      button{
+        display: flex;
+        margin: auto;
+        width: 15%;
+        border: black;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+        
+      }
+      body{
+        background-color:rgb(90, 229, 153);
+      }
+    </style>
+</head>
+<body>
+    <h1>Payement Gateway</h1>
+    <div class="main">
+    <table>
+        <tr>
+            <td id="num"><label for="number">Card No</label></td>
+        
+            <td><input type="Number" placeholder="123456789"></td>
+        </tr>
+        <tr>
+            <td id="cv"><label for="number">CVV</label></td>
+            
+            <td><input type="Number" placeholder="123"></td>
+        </tr>
+      <tr>
+            <td><label for="date">Expiry Date</label></td>
+            <td><input type="date" placeholder="01/01/2022"></td>
+        </tr>
+        <tr>
+            <td><label for="text">Name</label></td>
+            <td><input type="text" placeholder="name"></td>
+        </tr>
+        
+    </table>
+    </div> -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #btn{
+                /* background-color: blue;
+                width: 12%;
+                border-radius: 20px;
+                width: 1000px;
+                height: 30px;
+                */
+                margin-left: 33%;
+                width: 30%;
+	height: 8vh;
+	border-radius: 50px;
+	background-color:blue;
+
+            }
+            .container{
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	background: white;
+	max-width: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* text-align: center; */
+    justify-content: center;
+	/* min-height: 500vh; */
+	display: flex;
+	justify-content:flex-start;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+	padding-left: 500px;
+}
+            #footer>span{
+	display: flex;
+	justify-content: space-evenly;
+}
+#footer{
+	background-color: #02080f3c;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="right">
+                <h1 style="font-weight: bold;">PAYMENT</h1>
+                <form>
+                    
+                    Accepted Card <br>
+                    <img src="image/card1.png" width="100">
+                    <img src="image/card2.png" width="50">
+                    <br><br>
+    
+                    Credit card number
+                    <br>
+                <input type="text" name="" placeholder="Enter card number">
+                <br>
+                <br>
+                    
+                    Exp month
+                    <br>
+                    <input type="text" name="" placeholder="Enter Month">
+                    <br>
+                    <br>
+                    <div id="zip">
+                        <label>
+                            Exp year
+                            <br>
+                            <select>
+                                <option>Choose Year..</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                            </select>
+                            <br><br>
+                        </label>
+                            <label>
+                            CVV
+                            <br>
+                            <input type="number" name="" placeholder="CVV">
+                        </label>
+                        <br>
+                        <br>
+                    </div>
+                </form>
+                <!-- <input type="submit" name="" value="Proceed to Checkout"> -->
+            </div>
+        </div>
+        <br>
+        <a href="otp.html"><button id="btn"><h1>Enter</h1></button></a>
+    </body>
+    </html>
+
+    <br>
+    <br>
+    <br>
+    <div id="footer">
+        <br>
+            <span><h1 style="color: white;">fingerhut.</h1><img src="https://www.fingerhut.com/assets/f/misc/ShopSecurely.png" alt=""><img src="https://seal.digicert.com/seals/cascade/?tag=cQzBlXhC&referer=www.fingerhut.com&format=png&lang=en&an=min" alt=""><img src="https://s7d5.scene7.com/is/image/bluestembrands/BBB_Logo?scl=1&fmt=png" alt=""></span>
+            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYd7m1XBEUlHD1WYkM06bsK2Rba6Yc_I31g&usqp=CAU" alt=""><h3 style="margin-left: 30px;margin-top: 25px;"><span style="font-weight: bold;"><h2>Web Accessibility Policy</h2></span><br>
+                We have audited this and our other affiliate websites to ensure their accessibility. We are committed to maintaining the accessibility of this website to ensure that persons with disabilities have full and equal enjoyment of the goods, services, facilities, privileges, advantages, and accommodations of our services through the site. If you have any accessibility questions or problems, please contact us at 1-800-964-1975 or customerservice@fingerhut.com for assistance.</h3></span>
+                <br>
+    <p>Fingerhut Credit Accounts are issued by WebBank.</p><br>
+    <p>* Advertised Price Per Month: The advertised price per month is the estimated monthly payment required to be made on your WebBank/Fingerhut Credit Account for a single item order, or if at any time your account has multiple items on it, then please see the payment chart for payment terms. The advertised price per month will not apply. <a href="https://www.fingerhut.com/content/costofownership"> See Full Cost of Ownership.</a></p>
+    <br>
+    <p>◆ Your account minimum payment amount is determined by the purchases and balances on your WebBank/Fingerhut Credit Account. If you have a balance or are making a multiple item purchase, see the <a href="https://www.fingerhut.com/content/costofownership"> Existing Balance Payment Chart.</a>.</p>
+    <br>
+    <p>▽ Your account minimum payment amount is determined by the purchases and balances on your WebBank/Fingerhut Credit Account. The change in minimum payment amount is based on your account balance at the time it is advertised, and includes an assumption of interest charges and SafeLine fees, as applicable. The change in minimum payment amount does not include subsequent activity on your account such as any purchases, including deferred payment purchases, backordered, unshipped, returned or other pending purchases or exchanges; any payments, including partial, missed or returned payments; any fees, including recurring partner program charges, subsequent interest charges, late fees or returned payment fees. It is also subject to change based on shipping address, shipping method, partial shipments and taxes. Your minimum payment amount will not change and the purchase will not reflect on your statement until the order ships. If you have a balance or are making a multiple item purchase, see the <a href="Existing Balance Payment Chart"> Existing Balance Payment Chart.</a>.</p>
+    <br>
+    <p>1. If you apply and are accepted for a Fingerhut Credit Account issued by WebBank, who determines eligibility and qualifications for the terms of credit.</p>
+    <br>
+    <p>2. Minimum interest charges, late fees and returned payment fees apply. See the complete revolving WebBank/Fingerhut Credit Account Terms and Conditions</p>
+    <br>
+    <p>3. You may also be required to pay additional taxes on your purchase. <a href="https://www.fingerhut.com/content/customerservice#faq-orders">see details.</a></p>
+    <br>
+    <p>† For complete program details, see Fingerhut FreshStart Terms and Conditions. Your credit reward is a revolving Fingerhut Fetti Credit Account issued by WebBank with a credit line up to $250 and is dependent upon successful completion of the Fingerhut FreshStart Credit Account, as specified in your Truth in Lending Agreement.
+        <br>
+        <br>
+        <a href="https://www.fingerhut.com/content/PrivacyOnline#collection-personal-information">	California Collection Notice</a>
+    
+        <br>
+        <br>
+        © 2002-2023 Fingerhut. All rights reserved.</p>
+        </div>
+</body>
+</html>
