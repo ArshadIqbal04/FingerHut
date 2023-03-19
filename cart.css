@@ -1,0 +1,380 @@
+/* div {
+    border:1px solid green;
+ }   */
+body {
+  margin: 0;
+  padding: 0;
+}
+#mainBox {
+  margin-bottom: 40px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+#topBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#tr {
+  display: flex;
+  margin-left: 50px;
+}
+
+#bottomBox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#bottomBox > div > button {
+  background-color: rgb(1, 51, 153);
+  color: white;
+  font-size: 1.042em;
+  border-radius: 20px;
+  padding: 11px 15px;
+  display: block;
+  white-space: nowrap;
+  width: 250px;
+  margin-left: 40px;
+  height: 55px;
+}
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content a:hover {
+  background-color: rgb(124, 153, 213);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  margin-left: 55px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#tl {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: #003399;
+  padding: 10px 10px 1px 10px;
+  margin-right: 20px;
+  line-height: 1.428571429;
+}
+
+#search {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border: 1px solid #cccccc;
+  border-right: 0;
+  box-shadow: inset 1px 1px 5px #e5e5e5;
+  flex-grow: 1;
+  height: 53px;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  padding-right: 0px;
+  width: 850px;
+}
+.iconmagnify:before {
+  content: "\e01b";
+}
+#searchBtn {
+  min-width: auto;
+  margin-bottom: initial;
+  border: initial;
+  border-radius: 0 50px 50px 0;
+  color: #fff;
+  background-color: #003399;
+  padding: 6px 20px;
+  font-size: 1.042em;
+  height: 53px;
+  /* width:10px; */
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+}
+#pages {
+  margin-left: 120px;
+  margin-right: 70px;
+  color: rgb(1, 51, 153);
+}
+#pages span {
+  color: rgb(204, 204, 204);
+}
+#text1 {
+  margin-top: 20px;
+  margin-left: 120px;
+  font-size: 1.846em;
+  font-weight: 700;
+  color: #333333;
+  line-height: 1.5;
+}
+#text2 {
+  margin-top: 20px;
+  margin-left: 120px;
+  font-weight: 700;
+}
+#item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 120px;
+  margin-right: 70px;
+}
+#item img {
+  margin-top: 50px;
+  display: bolck;
+  width: 50%;
+  height: auto;
+}
+#details {
+  margin-top: 50px;
+  color: #333333;
+  font-size: 1.385em;
+  margin-bottom:50px;
+}
+#details span {
+  color: #0c3a5d;
+  font-weight: 700;
+}
+#price {
+  color: #333333;
+  font-size: 1.385em;
+}
+#emi {
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#quantity {
+  display:flex;
+  margin-top: 20px;;
+  margin-bottom: 20px;
+}
+#minus ,#plus{
+  width:5%;
+  text-align: center;
+  border-radius: 5px;
+  background-color:rgb(7, 109, 225);
+  padding-bottom:5px;
+}
+#minus button,#plus button{
+  background-color:rgb(7, 109, 225);
+  border:none;
+
+}
+#Q {
+  padding-right:15px;
+  padding-left: 15px;
+}
+#stock {
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid orange;
+  background-color: #ffe87f;
+  width: 65%;
+  color: #666;
+  height: 40px;
+  padding-top: 10px;
+  justify-content: center;
+  border-radius: 5px;
+}
+#gift {
+  color: inherit;
+    font-family: 'Lato';
+    font-size: 1.2em;
+    display: block;
+    margin-top: 25px;
+}
+#gift span {
+  color: #0c3a5d;
+  font-weight: 700;
+}
+#plans {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap:20px;
+  color: #616b0d;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 300px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+#plans div {
+
+  border-right: 1px solid rgb(150, 150, 150);
+}
+#porder {
+  text-align: center;
+  background-color: #ffe87f;
+  width:25%;
+  height:35px;
+  border-radius: 7px;
+  padding-top:5px;
+  padding-bottom:5px;
+  border:none;
+  font-size: 15px;
+  font-weight: 800;
+
+}
+
+.cartBody{
+  display: flex;
+  justify-content: center;
+}
+
+.cartItems{
+  display: flex;
+  flex-direction: column;
+}
+
+.cartItems >div{
+  display: flex;
+  width: 700px;
+  border: 1px solid grey;
+  margin-bottom: 12px;
+}
+
+.cartItems >div >div{
+  width: 220px;
+  margin-left: 10px;
+}
+
+.cartItems img{
+  width: 220px;
+  height: 220px;
+  margin: 0;
+}
+
+.cartItems>div>div+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cartItems>div>div+div>h3{
+  color: #11588F;  
+}
+
+.cartItems>div>div+div>p{
+  margin-top: 0;
+  font-size: 18px;  
+}
+
+.cartItems>div>div+div+div{
+  display:flex;
+  flex-direction: column;
+}
+
+.cartItems>div>div+div+div span{
+  font-size: 18px;
+  padding: 8px 16px;
+}
+
+.cartItems>div>div+div+div button{
+  font-size: 18px;
+  padding: 8px 10px;
+  width: 35px;
+  margin-right: 8px;
+}
+
+.cartItems>div>div+div+div>div+div{
+  display: flex;
+  justify-content: center;
+}
+
+.cartItems>div>div+div+div>div+div button{
+  padding: 8px 10px;
+  width: 100px;
+  color: white;
+  background-color: #0c3a5d;
+  border: none;
+  border-radius: 8px;
+}
+
+.totalAmmount{
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.discount30{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 20px 0;
+}
+
+.totalAmmount input{
+  font-size: 15px;
+  padding: 8px 0;
+  width: 150px;
+  border: none;
+  color: grey;
+}
+
+.discount30 button{
+  font-size: 15px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+.paymentdetails > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paymentdetails span{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#procced{
+  display: flex;
+  justify-content: center;
+}
+
+#procced p{
+  padding: 8px 20px;
+  border: none;
+  color:  white;
+  background-color:#0c3a5d;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+
+
