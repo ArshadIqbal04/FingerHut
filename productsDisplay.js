@@ -26,9 +26,9 @@ function displayProduct(){
             
             var btn = document.createElement("button");
             btn.textContent="Add to Cart";
-            // btn.addEventListener("click",function(){
-            //     addtocart(index);
-            // })
+            btn.addEventListener("click",function(){
+                addtocart(index);
+            })
 
             productCard.append(img,name,emi,price,btn);
             document.getElementById("productRegion-Card").append(productCard);    
@@ -71,9 +71,9 @@ function itemsDisplay(cat){
             
             var btn = document.createElement("button");
             btn.textContent="Add to Cart";
-            // btn.addEventListener("click",function(){
-            //     addtocart(index);
-            // })
+            btn.addEventListener("click",function(){
+                addtocart(index);
+            })
 
             productCard.append(img,name,emi,price,btn);
             document.getElementById("productRegion-Card").append(productCard);
@@ -122,9 +122,9 @@ function brandDisplay(cat){
             
             var btn = document.createElement("button");
             btn.textContent="Add to Cart";
-            // btn.addEventListener("click",function(){
-            //     addtocart(index);
-            // })
+            btn.addEventListener("click",function(){
+                addtocart(index);
+            })
 
             productCard.append(img,name,emi,price,btn);
             document.getElementById("productRegion-Card").append(productCard);
@@ -164,9 +164,9 @@ function genderDisplay(cat){
             
             var btn = document.createElement("button");
             btn.textContent="Add to Cart";
-            // btn.addEventListener("click",function(){
-            //     addtocart(index);
-            // })
+            btn.addEventListener("click",function(){
+                addtocart(index);
+            })
 
             productCard.append(img,name,emi,price,btn);
             document.getElementById("productRegion-Card").append(productCard);
@@ -174,11 +174,38 @@ function genderDisplay(cat){
     })
 }
 
-// function sortingFun(){
-//     var sortingValue = document.getElementById("sortingbyPrice").value;
-//     console.log(sortingValue);
-// }
+document.getElementById("hightoLow").addEventListener("click",hightoLow);
+document.getElementById("lowtoHigh").addEventListener("click",lowtoHigh);
+
+function hightoLow(){
+ dataArrls.sort(function(a,b){
+    return b.price - a.price;
+ })
+ displayProduct();
+}
+
+function lowtoHigh(){
+    dataArrls.sort(function(a,b){
+        return a.price - b.price;
+    })
+    displayProduct();
+}
+
+var addtocartArr = JSON.parse(localStorage.getItem("addtoCartls"))||[];
 
 function addtocart(index){
-
+    // addtocartArr.push(dataArrls[index]);
+    // localStorage.setItem("addtoCartls",JSON.stringify(addtocartArr));
+    addtocartObj = {
+        img_url: dataArrls[index].img_url,
+        name:dataArrls[index].name,
+        emiPrice: dataArrls[index].emiPrice,
+        price: dataArrls[index].price,
+        category: dataArrls[index].category,
+        brand: dataArrls[index].brand,
+        gender: dataArrls[index].gender,
+        count: 1,
+    }
+    addtocartArr.push(addtocartObj);
+    localStorage.setItem("addtoCartls",JSON.stringify(addtocartArr));
 }

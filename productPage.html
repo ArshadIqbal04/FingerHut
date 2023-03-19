@@ -8,11 +8,51 @@
     <title>FingerHut</title>
 </head>
 <body>
+    <!-- navbar -->
+    <div style=" background-color: rgb(246, 246, 246);;">
+        <div id="mainBox" class="mainBox">
+            <div id="topBox">
+                <div id="tr"><img src="https://www.fingerhut.com/assets/f/misc/fingerhut_RGB.svg"></div>
+
+                <div id="tl">
+                    <a style="text-decoration: none;color: rgb(1, 51, 153);" href="LINK PASTE">Login/Signin</a>
+                    <a>Customer Service</a>
+                    <a style="text-decoration: none;color: rgb(1, 51, 153);" href="./cart.html">Shopping cart</a>
+                </div>
+            </div>
+            &nbsp
+            <div id="bottomBox">
+                <div class="dropdown">
+                    <button class="dropdownbtn">Shop by Department</button>
+                    <div class="dropdown-content">
+                        <a href="#">Clothing & Shoes</a>
+                        <a href="#">Baby & Kids</a>
+                        <a href="#">Furniture</a>
+                        <a href="#">Patio & Garden</a>
+                        <a href="#">Sports , Fitness & Outdoors</a>
+                        <a href="#">Toys & Games</a>
+                        <a href="#">Electronics & Office</a>
+                        <a href="#">Health & Beauty</a>
+                        <a href="#">Tools & HomeImprovement</a>
+                        <a href="#">Pet Supplies</a>
+                        <a href="#">Luggage</a>
+                      </div>
+                </div>
+                <div style="display:flex; align-items:center">
+                    <div><input placeholder="Search..." id="search" type="text" name="Search"></div>
+                    <div><button id="searchBtn">
+                        <div  class="iconfont iconMagnify"></div>Search</button></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End bro -->
     <div class="header">
 
     </div>
     <main id="content">
-        <h3>Home Page</h3>
+        <a href="#" style=" text-decoration: none; color: black;"><h3 style="margin-left: 105px;">Home Page</a></h3>
         <div class="container-main-container">
             <div class="sorting-region">
                 <div>
@@ -75,13 +115,10 @@
                     </div>
                 </div>
                 <div class="sortClass">
-                    <label for="">Sort By</label>
-                    <select onchange="sortingFun" id="sortingbyPrice">
-                        <option value="Relevance">Relevance</option>
-                        <option value="Low to High">Low to High</option>
-                        <option value="High to Low">High to Low</option>
-                        <option value="Rating">Rating high to low</option>
-                    </select>
+                    <span>Sort By</span>
+                    <button id="hightoLow">High to Low</button>
+                    <button id="lowtoHigh">Low to high</button>
+                    <button id="rating">Rating</button>
                 </div>
                 <div id="productRegion-Card">
 

@@ -9,6 +9,15 @@ var dataDetailArr = [
         gender: "Male",
     },
     {
+        img_url: "https://s7d5.scene7.com/is/image/bluestembrands/4NRWYQAWGS090_VA_999?$thumbnail300$",
+        name: "Reebok Men's Court Advance Sneaker",
+        emiPrice: 12.99,
+        price: 68.25,
+        category: "Shoes",
+        brand: "Reebook",
+        gender: "Male",
+    },
+    {
         img_url: "https://s7d5.scene7.com/is/image/bluestembrands/4NRPB9NB3S130_VA_999?$thumbnail300$",
         name: "PUMA Men's Axelion LS Running Shoe",
         emiPrice: 12.99,
@@ -168,15 +177,6 @@ var dataDetailArr = [
         price: 45.00,
         category: "Cloth",
         brand: "Puma",
-        gender: "Male",
-    },
-    {
-        img_url: "https://s7d5.scene7.com/is/image/bluestembrands/4NRWYQAWGS090_VA_999?$thumbnail300$",
-        name: "Reebok Men's Court Advance Sneaker",
-        emiPrice: 12.99,
-        price: 68.25,
-        category: "Shoes",
-        brand: "Reebook",
         gender: "Male",
     },
     {
