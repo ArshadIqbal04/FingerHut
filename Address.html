@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Billing Address</title>
+		<style>
+			body {
+  margin: 0;
+  padding: 0;
+}
+#mainBox {
+  margin-bottom: 40px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+#topBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#tr {
+  display: flex;
+  margin-left: 50px;
+}
+
+#bottomBox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#bottomBox > div > button {
+  background-color: rgb(1, 51, 153);
+  color: white;
+  font-size: 1.042em;
+  border-radius: 20px;
+  padding: 11px 15px;
+  display: block;
+  white-space: nowrap;
+  width: 250px;
+  margin-left: 40px;
+  height: 55px;
+}
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content a:hover {
+  background-color: rgb(124, 153, 213);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  margin-left: 55px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#tl {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: #003399;
+  padding: 10px 10px 1px 10px;
+  margin-right: 20px;
+  line-height: 1.428571429;
+}
+
+#search {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border: 1px solid #cccccc;
+  border-right: 0;
+  box-shadow: inset 1px 1px 5px #e5e5e5;
+  flex-grow: 1;
+  height: 53px;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  padding-right: 0px;
+  width: 850px;
+}
+.iconmagnify:before {
+  content: "\e01b";
+}
+#searchBtn {
+  min-width: auto;
+  margin-bottom: initial;
+  border: initial;
+  border-radius: 0 50px 50px 0;
+  color: #fff;
+  background-color: #003399;
+  padding: 6px 20px;
+  font-size: 1.042em;
+  height: 53px;
+  /* width:10px; */
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+}
+		</style>
+		<link rel="stylesheet" type="text/css" href="payment.css">
+	</head>
+	<body>
+		<!-- <nav><h1>fingerhut</h1><p>| Secure Checkout</p> <p>  Welcome</p> <p>|SignOut</p> <p>Shopping Cart</p></nav> -->
+		<div style=" background-color: rgb(246, 246, 246);;">
+			<div id="mainBox" class="mainBox">
+				<div id="topBox">
+					<div id="tr"><a href="./index.html"><img src="https://www.fingerhut.com/assets/f/misc/fingerhut_RGB.svg"></a></div>
+	
+					<div id="tl">
+						<a style="text-decoration: none;color: rgb(1, 51, 153);" href="Signup.html">Login/Signin</a>
+						<a>Customer Service</a>
+						<a style="text-decoration: none;color: rgb(1, 51, 153);" href="LINK PASTE">Shopping cart</a>
+					</div>
+				</div>
+				&nbsp
+				<div id="bottomBox">
+					<div class="dropdown">
+						<button class="dropdownbtn">Shop by Department</button>
+						<div class="dropdown-content">
+							<a href="#">Clothing & Shoes</a>
+							<a href="#">Baby & Kids</a>
+							<a href="#">Furniture</a>
+							<a href="#">Patio & Garden</a>
+							<a href="#">Sports , Fitness & Outdoors</a>
+							<a href="#">Toys & Games</a>
+							<a href="#">Electronics & Office</a>
+							<a href="#">Health & Beauty</a>
+							<a href="#">Tools & HomeImprovement</a>
+							<a href="#">Pet Supplies</a>
+							<a href="#">Luggage</a>
+						  </div>
+					</div>
+					<div style="display:flex; align-items:center">
+						<div><input placeholder="Search..." id="search" type="text" name="Search"></div>
+						<div><button id="searchBtn">
+							<div  class="iconfont iconMagnify"></div>Search</button></div>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+		
+		<header>
+			<div class="container">
+				<div class="left">
+			<div id="bs"><h3 style="background-color: blue;"><pre>1. Billing and Shipping                                          </pre></h3><h3 style="background-color: blue;"><pre>2.      </pre></h3><h3 style="background-color: blue;">3.</h3></div>
+			<h3>BILLING ADDRESS</h3>
+			<form>
+				*First Name
+				<input type="text" name="" placeholder="Enter name">
+				Middle Name
+				<input type="text" name="" placeholder="Enter name">
+				*Last Name
+				<input type="text" name="" placeholder="Enter name">
+				*Email
+				<input type="text" name="" placeholder="Enter email">
+
+				*Address
+				<input type="text" name="" placeholder="Enter address">
+				
+				City
+				<input type="text" name="" placeholder="Enter City">
+				<div id="zip">
+					<label>
+						State
+						<select>
+							<option>Choose State..</option>
+							<option>Rajasthan</option>
+							<option>Hariyana</option>
+							<option>Uttar Pradesh</option>
+							<option>Madhya Pradesh</option>
+						</select>
+					</label>
+						<label>
+						Zip code
+						<input type="number" name="" placeholder="Zip code">
+					</label>
+				</div>
+			</form>
+			<br>
+			<br>
+			<p id="content"><span style="font-weight:bold;">Consent for Use of Telephone Numbers:</span> You authorize WebBank/Fingerhut, their affiliates, agents, and others calling at their request or on their behalf to contact you at any number (i) you have provided to us (ii) from which you have called us, or (iii) which we obtain and believe we can reach you at. We may contact you in any way, such as calling, texting, using an automated dialer or using pre-recorded messages. We may contact you on a mobile, wireless, or similar device, even if you are charged for it by your provider.</p>
+
+				<p>	<span style="font-weight: bold;">No Oral Modifications:</span> We are clarifying that this Agreement cannot be changed orally.</p>
+				<br>
+				<!-- <br> -->
+				<button id="btn"><a href="pay.html"><h1>Continue Payment</h1></a></button>
+				<br>
+		</div>
+		<br>
+		<br>
+
+		<!-- <div class="right">
+			<h3>PAYMENT</h3>
+			<form>
+				Accepted Card <br>
+				<img src="image/card1.png" width="100">
+				<img src="image/card2.png" width="50">
+				<br><br>
+
+				Credit card number
+			<input type="text" name="" placeholder="Enter card number">
+				
+				Exp month
+				<input type="text" name="" placeholder="Enter Month">
+				<div id="zip">
+					<label>
+						Exp year
+						<select>
+							<option>Choose Year..</option>
+							<option>2022</option>
+							<option>2023</option>
+							<option>2024</option>
+							<option>2025</option>
+						</select>
+					</label>
+						<label>
+						CVV
+						<input type="number" name="" placeholder="CVV">
+					</label>
+				</div> -->
+			</form>
+			<!-- <input type="submit" name="" value="Proceed to Checkout"> -->
+		</div>
+	</div>
+	
+</header>
+<!-- <div id="footer">
+	<br>
+		<span><h1 style="color: white;">fingerhut.</h1><img src="https://www.fingerhut.com/assets/f/misc/ShopSecurely.png" alt=""><img src="https://seal.digicert.com/seals/cascade/?tag=cQzBlXhC&referer=www.fingerhut.com&format=png&lang=en&an=min" alt=""><img src="https://s7d5.scene7.com/is/image/bluestembrands/BBB_Logo?scl=1&fmt=png" alt=""></span>
+		<span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYd7m1XBEUlHD1WYkM06bsK2Rba6Yc_I31g&usqp=CAU" alt=""><h3 style="margin-left: 30px;margin-top: 25px;"><span style="font-weight: bold;"><h2>Web Accessibility Policy</h2></span><br>
+			We have audited this and our other affiliate websites to ensure their accessibility. We are committed to maintaining the accessibility of this website to ensure that persons with disabilities have full and equal enjoyment of the goods, services, facilities, privileges, advantages, and accommodations of our services through the site. If you have any accessibility questions or problems, please contact us at 1-800-964-1975 or customerservice@fingerhut.com for assistance.</h3></span>
+			<br>
+<p>Fingerhut Credit Accounts are issued by WebBank.</p><br>
+<p>* Advertised Price Per Month: The advertised price per month is the estimated monthly payment required to be made on your WebBank/Fingerhut Credit Account for a single item order, or if at any time your account has multiple items on it, then please see the payment chart for payment terms. The advertised price per month will not apply. <a href="https://www.fingerhut.com/content/costofownership"> See Full Cost of Ownership.</a></p>
+<br>
+<p>◆ Your account minimum payment amount is determined by the purchases and balances on your WebBank/Fingerhut Credit Account. If you have a balance or are making a multiple item purchase, see the <a href="https://www.fingerhut.com/content/costofownership"> Existing Balance Payment Chart.</a>.</p>
+<br>
+<p>▽ Your account minimum payment amount is determined by the purchases and balances on your WebBank/Fingerhut Credit Account. The change in minimum payment amount is based on your account balance at the time it is advertised, and includes an assumption of interest charges and SafeLine fees, as applicable. The change in minimum payment amount does not include subsequent activity on your account such as any purchases, including deferred payment purchases, backordered, unshipped, returned or other pending purchases or exchanges; any payments, including partial, missed or returned payments; any fees, including recurring partner program charges, subsequent interest charges, late fees or returned payment fees. It is also subject to change based on shipping address, shipping method, partial shipments and taxes. Your minimum payment amount will not change and the purchase will not reflect on your statement until the order ships. If you have a balance or are making a multiple item purchase, see the <a href="Existing Balance Payment Chart"> Existing Balance Payment Chart.</a>.</p>
+<br>
+<p>1. If you apply and are accepted for a Fingerhut Credit Account issued by WebBank, who determines eligibility and qualifications for the terms of credit.</p>
+<br>
+<p>2. Minimum interest charges, late fees and returned payment fees apply. See the complete revolving WebBank/Fingerhut Credit Account Terms and Conditions</p>
+<br>
+<p>3. You may also be required to pay additional taxes on your purchase. <a href="https://www.fingerhut.com/content/customerservice#faq-orders">see details.</a></p>
+<br>
+<p>† For complete program details, see Fingerhut FreshStart Terms and Conditions. Your credit reward is a revolving Fingerhut Fetti Credit Account issued by WebBank with a credit line up to $250 and is dependent upon successful completion of the Fingerhut FreshStart Credit Account, as specified in your Truth in Lending Agreement.
+	<br>
+	<br>
+	<a href="https://www.fingerhut.com/content/PrivacyOnline#collection-personal-information">	California Collection Notice</a>
+
+	<br>
+	<br>
+	© 2002-2023 Fingerhut. All rights reserved.</p>
+	</div> -->
+	
+    <div style=" display:flex;background-color: rgb(66,66,66);gap:60px ;padding:10px 0">
+        <div style="margin-left:60px">
+            <ul>
+                <p style="font-size: 1.077em;font-weight: 700;color:whitesmoke;">About Fingerhut</p>
+                <div style="color:rgb(215, 211, 211)">
+                    <p>About Us</p>
+                    <p>About Us</p>
+                    <p>Privacy & Security</p>
+                    <p>Fingerhut Privacy Policy</p>
+                    <p>California Collection Notice</p>
+                    <p>Sweepstakes Rules</p>
+                    <p>Terms of Use</p>
+                </div>
+            </ul>
+        </div>
+        <div style="margin-left:70px">
+            <ul>
+                <p style="font-size: 1.077em;font-weight: 700;color:whitesmoke">Customer Service</p>
+                <div style="color:rgb(215, 211, 211)">
+                    <p>Contact Us</p>
+                    <p>FAQs</p>
+                    <p>Manufacturer Contact</p>
+                    <p>Product Guides</p>
+                    <p>Product Recall</p>
+                    <p>Returns</p>
+                </div>
+            </ul>
+
+        </div>
+        <div style="margin-left:70px">
+            <ul>
+                <p style="font-size: 1.077em;font-weight: 700;color:whitesmoke">Payment Options</p>
+                <div style="color:rgb(215, 211, 211)">
+                    <p>Apply for Credit</p>
+                    <p>Credit Education</p>
+                    <p>Fingerhut Fetti
+                        <br>Terms and Conditions
+                    </p>
+                    <p>Fingerhut Privacy Policy</p>
+                    <p>My Accounte</p>
+                </div>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <div style=" display:flex;background-color: rgb(27,26,26);gap:60px ;padding:10px 0;">
+        <div style="margin-left:95px;margin-right:100px;color:rgb(215, 211, 211);line-break: auto;">
+            <p>Fingerhut Credit Accounts are issued by WebBank.</p>
+            <p>* Advertised Price Per Month: The advertised price per month is the estimated monthly payment required to
+                be made on your WebBank/Fingerhut Fetti Credit Account for a single item order, or if at any time your
+                account has multiple items on it, then please see the payment
+                chart for payment terms. The advertised price per month will not apply. See Full Cost of Ownership.</p>
+            <p> Your account minimum payment amount is determined by the purchases and balances on your
+                WebBank/Fingerhut Credit Account. If yo
+                u have a balance or are making a multiple item purchase, see the Existing Balance Payment Chart.</p>
+            <p>▽ Your account minimum payment amount is determined by the purchases and balances on your
+                WebBank/Fingerhut Credit Account. The change in minimum payment amount is based on your account balance
+                at the time it is advertised, and includes an assumption of interest charges and SafeLine fees, as
+                applicable. The change in minimum payment amount does not include subsequent activity on your account
+                such as any purchases, including deferred payment purchases, backordered, unshipped, returned or other
+                pending purchases or exchanges; any payments, including partial, missed or returned payments; any fees,
+                including recurring partner program charges, subsequent interest charges, late fees or returned payment
+                fees. It is also subject to change based on shipping address, shipping method, partial shipments and
+                taxes. Your minimum payment amount will not change and the purchase will not reflect on your statement
+                until the order ships.
+                If you have a balance or are making a multiple item purchase, see the Existing Balance Payment Chart.
+            </p>
+            <p>© 2002-2023 Fingerhut. All rights reserved.</p>
+</body>
+</html>

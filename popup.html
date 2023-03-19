@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        #footer>span{
+	display: flex;
+	justify-content: space-evenly;
+}
+#footer{
+	background-color: #02080f3c;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+        form{
+            width: 100%;
+            height: 20vh;
+            background-color: #3c5077;
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+
+        }
+        .btn{
+            padding: 10px 60px;
+            background: #fff;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: 500;
+            border-radius: 30px;
+
+        }
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.close-popup{
+    visibility: hidden;
+    top: 0;
+    transform: translate(-50%,-50%) scale(0.1);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor:pointer ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+#nm{
+    text-align: center;
+    margin-top: 10px;
+    justify-content: auto;
+    margin-left: 40%;
+    margin-top: 4px;
+    /* padding-top: 20px; */
+    width: 29%;
+    height: 5vh;
+}
+.vtn{
+                /* background-color: blue;
+                width: 12%;
+                border-radius: 20px;
+                width: 1000px;
+                height: 30px;
+                */
+                margin-left: 40%;
+                width: 30%;
+	height: 8vh;
+	border-radius: 50px;
+	background-color:blue;
+    margin-bottom: 10px;
+
+            }
+            body {
+  margin: 0;
+  padding: 0;
+}
+#mainBox {
+  margin-bottom: 40px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+#topBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#tr {
+  display: flex;
+  margin-left: 50px;
+}
+
+#bottomBox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#bottomBox > div > button {
+  background-color: rgb(1, 51, 153);
+  color: white;
+  font-size: 1.042em;
+  border-radius: 20px;
+  padding: 11px 15px;
+  display: block;
+  white-space: nowrap;
+  width: 250px;
+  margin-left: 40px;
+  height: 55px;
+}
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content a:hover {
+  background-color: rgb(124, 153, 213);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  margin-left: 55px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#tl {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: #003399;
+  padding: 10px 10px 1px 10px;
+  margin-right: 20px;
+  line-height: 1.428571429;
+}
+
+#search {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border: 1px solid #cccccc;
+  border-right: 0;
+  box-shadow: inset 1px 1px 5px #e5e5e5;
+  flex-grow: 1;
+  height: 53px;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  padding-right: 0px;
+  width: 850px;
+}
+.iconmagnify:before {
+  content: "\e01b";
+}
+#searchBtn {
+  min-width: auto;
+  margin-bottom: initial;
+  border: initial;
+  border-radius: 0 50px 50px 0;
+  color: #fff;
+  background-color: #003399;
+  padding: 6px 20px;
+  font-size: 1.042em;
+  height: 53px;
+  /* width:10px; */
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+}
+    </style>
+</head>
+<body>
+    <div style=" background-color: rgb(246, 246, 246);;">
+        <div id="mainBox" class="mainBox">
+            <div id="topBox">
+                <div id="tr"><img src="https://www.fingerhut.com/assets/f/misc/fingerhut_RGB.svg"></div>
+
+                <div id="tl">
+                    <a style="text-decoration: none;color: rgb(1, 51, 153);" href="Signup.html">Login/Signin</a>
+                    <a>Customer Service</a>
+                    <a style="text-decoration: none;color: rgb(1, 51, 153);" href="LINK PASTE">Shopping cart</a>
+                </div>
+            </div>
+            &nbsp
+            <div id="bottomBox">
+                <div class="dropdown">
+                    <button class="dropdownbtn">Shop by Department</button>
+                    <div class="dropdown-content">
+                        <a href="#">Clothing & Shoes</a>
+                        <a href="#">Baby & Kids</a>
+                        <a href="#">Furniture</a>
+                        <a href="#">Patio & Garden</a>
+                        <a href="#">Sports , Fitness & Outdoors</a>
+                        <a href="#">Toys & Games</a>
+                        <a href="#">Electronics & Office</a>
+                        <a href="#">Health & Beauty</a>
+                        <a href="#">Tools & HomeImprovement</a>
+                        <a href="#">Pet Supplies</a>
+                        <a href="#">Luggage</a>
+                      </div>
+                </div>
+                <div style="display:flex; align-items:center">
+                    <div><input placeholder="Search..." id="search" type="text" name="Search"></div>
+                    <div><button id="searchBtn">
+                        <div  class="iconfont iconMagnify"></div>Search</button></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- <br>
+    <br> -->
+    <form action="">
+
+        <input style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" id="nm" type="number" placeholder="enter otp">
+        <br>
+        <br>
+        <!-- <br> -->
+        <button type="submit" class="vtn" onclick="openPopup()"><h1>Submit</h1></button>
+        <div class="popup" id="popup">
+            <img src="data:image/png;base64,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" alt="">
+            <h2>Thank You!</h2>
+            <p>Payment Successfull</p>
+            <button type="button" onclick="closePopup()">OK</button>
+    
+        </div>
+    </form>
+    <!-- <div class="container"> -->
+    <!-- </div> -->
+
+
+    <!-- footer -->
+    <!-- <div id="footer">
+        <br>
+            <span><h1 style="color: white;">fingerhut.</h1><img src="https://www.fingerhut.com/assets/f/misc/ShopSecurely.png" alt=""><img src="https://seal.digicert.com/seals/cascade/?tag=cQzBlXhC&referer=www.fingerhut.com&format=png&lang=en&an=min" alt=""><img src="https://s7d5.scene7.com/is/image/bluestembrands/BBB_Logo?scl=1&fmt=png" alt=""></span>
+            <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYd7m1XBEUlHD1WYkM06bsK2Rba6Yc_I31g&usqp=CAU" alt=""><h3 style="margin-left: 30px;margin-top: 25px;"><span style="font-weight: bold;"><h2>Web Accessibility Policy</h2></span><br>
+                We have audited this and our other affiliate websites to ensure their accessibility. We are committed to maintaining the accessibility of this website to ensure that persons with disabilities have full and equal enjoyment of the goods, services, facilities, privileges, advantages, and accommodations of our services through the site. If you have any accessibility questions or problems, please contact us at 1-800-964-1975 or customerservice@fingerhut.com for assistance.</h3></span>
+                <br>
+    <p>Fingerhut Credit Accounts are issued by WebBank.</p><br>
+    <p>* Advertised Price Per Month: The advertised price per month is the estimated monthly payment required to be made on your WebBank/Fingerhut Credit Account for a single item order, or if at any time your account has multiple items on it, then please see the payment chart for payment terms. The advertised price per month will not apply. <a href="https://www.fingerhut.com/content/costofownership"> See Full Cost of Ownership.</a></p>
+    <br>
+    <p>◆ Your account minimum payment amount is determined by the purchases and balances on your WebBank/Fingerhut Credit Account. If you have a balance or are making a multiple item purchase, see the <a href="https://www.fingerhut.com/content/costofownership"> Existing Balance Payment Chart.</a>.</p>
+    <br>
+    <p>▽ Your account minimum payment amount is determined by the purchases and balances on your WebBank/Fingerhut Credit Account. The change in minimum payment amount is based on your account balance at the time it is advertised, and includes an assumption of interest charges and SafeLine fees, as applicable. The change in minimum payment amount does not include subsequent activity on your account such as any purchases, including deferred payment purchases, backordered, unshipped, returned or other pending purchases or exchanges; any payments, including partial, missed or returned payments; any fees, including recurring partner program charges, subsequent interest charges, late fees or returned payment fees. It is also subject to change based on shipping address, shipping method, partial shipments and taxes. Your minimum payment amount will not change and the purchase will not reflect on your statement until the order ships. If you have a balance or are making a multiple item purchase, see the <a href="Existing Balance Payment Chart"> Existing Balance Payment Chart.</a>.</p>
+    <br>
+    <p>1. If you apply and are accepted for a Fingerhut Credit Account issued by WebBank, who determines eligibility and qualifications for the terms of credit.</p>
+    <br>
+    <p>2. Minimum interest charges, late fees and returned payment fees apply. See the complete revolving WebBank/Fingerhut Credit Account Terms and Conditions</p>
+    <br>
+    <p>3. You may also be required to pay additional taxes on your purchase. <a href="https://www.fingerhut.com/content/customerservice#faq-orders">see details.</a></p>
+    <br>
+    <p>† For complete program details, see Fingerhut FreshStart Terms and Conditions. Your credit reward is a revolving Fingerhut Fetti Credit Account issued by WebBank with a credit line up to $250 and is dependent upon successful completion of the Fingerhut FreshStart Credit Account, as specified in your Truth in Lending Agreement.
+        <br>
+        <br>
+        <a href="https://www.fingerhut.com/content/PrivacyOnline#collection-personal-information">	California Collection Notice</a>
+    
+        <br>
+        <br>
+        © 2002-2023 Fingerhut. All rights reserved.</p>
+        </div> -->
+        <div style=" display:flex;background-color: rgb(66,66,66);gap:60px ;padding:10px 0">
+            <div style="margin-left:60px">
+                <ul>
+                    <p style="font-size: 1.077em;font-weight: 700;color:whitesmoke;">About Fingerhut</p>
+                    <div style="color:rgb(215, 211, 211)">
+                        <p>About Us</p>
+                        <p>About Us</p>
+                        <p>Privacy & Security</p>
+                        <p>Fingerhut Privacy Policy</p>
+                        <p>California Collection Notice</p>
+                        <p>Sweepstakes Rules</p>
+                        <p>Terms of Use</p>
+                    </div>
+                </ul>
+            </div>
+            <div style="margin-left:70px">
+                <ul>
+                    <p style="font-size: 1.077em;font-weight: 700;color:whitesmoke">Customer Service</p>
+                    <div style="color:rgb(215, 211, 211)">
+                        <p>Contact Us</p>
+                        <p>FAQs</p>
+                        <p>Manufacturer Contact</p>
+                        <p>Product Guides</p>
+                        <p>Product Recall</p>
+                        <p>Returns</p>
+                    </div>
+                </ul>
+    
+            </div>
+            <div style="margin-left:70px">
+                <ul>
+                    <p style="font-size: 1.077em;font-weight: 700;color:whitesmoke">Payment Options</p>
+                    <div style="color:rgb(215, 211, 211)">
+                        <p>Apply for Credit</p>
+                        <p>Credit Education</p>
+                        <p>Fingerhut Fetti
+                            <br>Terms and Conditions
+                        </p>
+                        <p>Fingerhut Privacy Policy</p>
+                        <p>My Accounte</p>
+                    </div>
+                </ul>
+    
+            </div>
+    
+    
+        </div>
+        <div style=" display:flex;background-color: rgb(66,66,66);gap:60px ;padding:10px 0;">
+            <div style="margin-left:95px;margin-right:100px;color:rgb(215, 211, 211);line-break: auto;">
+                <p>Fingerhut Credit Accounts are issued by WebBank.</p>
+                <p>* Advertised Price Per Month: The advertised price per month is the estimated monthly payment required to
+                    be made on your WebBank/Fingerhut Fetti Credit Account for a single item order, or if at any time your
+                    account has multiple items on it, then please see the payment
+                    chart for payment terms. The advertised price per month will not apply. See Full Cost of Ownership.</p>
+                <p> Your account minimum payment amount is determined by the purchases and balances on your
+                    WebBank/Fingerhut Credit Account. If yo
+                    u have a balance or are making a multiple item purchase, see the Existing Balance Payment Chart.</p>
+                <p>▽ Your account minimum payment amount is determined by the purchases and balances on your
+                    WebBank/Fingerhut Credit Account. The change in minimum payment amount is based on your account balance
+                    at the time it is advertised, and includes an assumption of interest charges and SafeLine fees, as
+                    applicable. The change in minimum payment amount does not include subsequent activity on your account
+                    such as any purchases, including deferred payment purchases, backordered, unshipped, returned or other
+                    pending purchases or exchanges; any payments, including partial, missed or returned payments; any fees,
+                    including recurring partner program charges, subsequent interest charges, late fees or returned payment
+                    fees. It is also subject to change based on shipping address, shipping method, partial shipments and
+                    taxes. Your minimum payment amount will not change and the purchase will not reflect on your statement
+                    until the order ships.
+                    If you have a balance or are making a multiple item purchase, see the Existing Balance Payment Chart.
+                </p>
+                <p>© 2002-2023 Fingerhut. All rights reserved.</p>
+    
+</body>
+</html>
+
+<script>
+    let popup=document.getElementById("popup");
+    function closePopup(){
+        popup.classList.add("close-popup");
+    }
+   
+    document.querySelector("button").addEventListener("click",work);
+
+function work(){
+     var otp=document.getElementById("nm").value;
+     if(otp==1234){
+        // alert("Successfull")
+        // function openPopup(){
+        popup.classList.add("open-popup");
+    // }
+     }else if(otp===""){
+        alert("enter otp")
+     }else{
+        alert("Enter valid otp")
+     }
+}
+</script>

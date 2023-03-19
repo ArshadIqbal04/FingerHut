@@ -75,6 +75,7 @@ function minusFun(index){
         localStorage.setItem("addtoCartls",JSON.stringify(cartArr))
     }
     cartitemDisplay();
+    cartpayDisplay()
 }
 
 function addFun(index){ 
@@ -83,12 +84,14 @@ function addFun(index){
     cartArr[index].count = i;
     localStorage.setItem("addtoCartls",JSON.stringify(cartArr))
     cartitemDisplay();
+    cartpayDisplay()
 }
 
 function removeIndex(index){
     cartArr.splice(index,1);
     localStorage.setItem("addtoCartls",JSON.stringify(cartArr));
     cartitemDisplay();
+    cartpayDisplay()
 }
 
 

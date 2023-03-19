@@ -367,12 +367,14 @@ gap:20px;
   justify-content: center;
 }
 
-#procced button{
-  padding: 8px 10px;
+#procced p{
+  padding: 8px 20px;
   border: none;
   color:  white;
   background-color:#0c3a5d;
   font-size: 18px;
   border-radius: 8px;
 }
+
+
 
