@@ -303,14 +303,3 @@ body {
     margin-top: 4px;
 }
 
-.paymentdetails > div{
-  display: flex;
-}
-
-.paymentdetails h4{
-    position: absolute;
-}
-
-.paymentdetails span{
-    justify-content: right;
-}

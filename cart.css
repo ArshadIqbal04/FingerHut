@@ -362,5 +362,17 @@ gap:20px;
   font-weight: bold;
 }
 
+#procced{
+  display: flex;
+  justify-content: center;
+}
 
+#procced button{
+  padding: 8px 10px;
+  border: none;
+  color:  white;
+  background-color:#0c3a5d;
+  font-size: 18px;
+  border-radius: 8px;
+}
 

@@ -88,11 +88,31 @@ function addFun(index){
 function removeIndex(index){
     cartArr.splice(index,1);
     localStorage.setItem("addtoCartls",JSON.stringify(cartArr));
-    cartitemDisplay()
+    cartitemDisplay();
 }
 
 
 // second div total amount
+cartpayDisplay()
+
+function cartpayDisplay(){
+    let totalAdd = 0;
+    cartArr.map(function(elem,index){
+        totalAdd+= (elem.count*elem.price);
+    })
+    document.querySelector("#payAmount").textContent="$ "+totalAdd+".00";
+    document.querySelector("#discountPrice").textContent="$"+0+".00";
+    document.querySelector("#totalPay").textContent="$ "+totalAdd+".00";
+}
+
+// document.querySelector("#discountBtn").addEventListener("click",discountBtn);
+
+// discountBtn(){
+//     let discode = document.getElementById("inputCode").value;
+//     if(discode=="masai30"){
+//         document.createElement("alert")
+//     }
+// }
 
 
 
