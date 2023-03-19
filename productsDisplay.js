@@ -208,4 +208,5 @@ function addtocart(index){
     }
     addtocartArr.push(addtocartObj);
     localStorage.setItem("addtoCartls",JSON.stringify(addtocartArr));
+    alert("item Add to cart")
 }

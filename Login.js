@@ -20,7 +20,7 @@ function login(event) {
   else
   {
     alert("Login succesfull,You will be redirected shortly");
-  window.location.href = "dashboard.html";
+  window.location.href = "index.html";
   }
 }
 

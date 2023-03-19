@@ -22,6 +22,6 @@ function signup(event){
   localStorage.setItem("userData", JSON.stringify(userData));
   
   alert("Signup successful! You will be redirected shortly.");
-  window.location.replace("../Login/Login.html");
+  window.location.href="Login.html";
     
 }
